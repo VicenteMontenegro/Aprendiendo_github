@@ -10,11 +10,12 @@ if __name__ == "__main__":
     print("La suma es:", resultado)
 
 # Crear funcion multiplicar
-def fn_multiplicar(a,b):
+def fn_multi_div(a,b):
     total_mult = a*b
-    return total_mult
+    total_div = a/b
+    return total_mult, total_div
 if __name__ == "__main__":
     # Ejemplo de uso de la funcion
-    resultado = fn_multiplicar(int(a), int(b)) # Aqui puedes pasar los valores que desee
-    print("La multiplicacion es:", resultado)
-    
+    resultado = fn_multi_div(float(a), float(b)) # Aqui puedes pasar los valores que desee
+    print("La multiplicacion es:", resultado[0])
+    print("La division es:", resultado[1])
